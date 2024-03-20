@@ -2,7 +2,7 @@
   
 ![header](https://capsule-render.vercel.app/api?type=waving&color=d0d0d0&height=150&section=header&text=Joha'sGithub&fontColor=292929&fontSize=70&animation=fadeIn&fontAlignY=55)
 
-#### ❤️💛 Welcome to Joda's github 💚💙
+#### ❤️💛 Welcome to Joha's github 💚💙
 
 <br/>
 <br/>
