@@ -19,6 +19,29 @@ public class Application2 {
         int num2 = 166;
         System.out.println("1부터 100 사이인지 확인 : " + (num2 >= 1 && num2 <= 100));
 
+        /* 2. 영어의 대문자인지 확인 */
+        /* 영어 대문자니?--> 문자변수>='A' && 문자변수<='Z' */
+        char ch = 'G';
+        System.out.println("영어의 대문자인지 확인 : " + (ch >= 'A' && ch <= 'Z'));
+
+        char ch1 = 'g';
+        System.out.println("영어의 대문자인지 확인 : " + (ch1 >= 'A' && ch1 <= 'Z'));
+
+        /* 3. 대소문자와 상관없이 영문자 y인지 확인 */
+        /* 문자변수 == 'y' || 문자변수 == 'Y' */
+
+        char ch2 = 'y';
+        System.out.println("영문자 y인지 확인 : " + (ch2 == 'y' || ch2 == 'Y'));
+
+        char ch3 = 'Y';
+        System.out.println("영문자 Y인지 확인 : " + (ch3 == 'y' || ch3 == 'Y'));
+
+        /* 4. 영문자인지 확인 */
+        /* A : 65, Z : 90, a : 97, z : 122 (중간의 91~96까지는 영문자가 아님) */
+
+        char ch4 = 'f';
+        System.out.println("영문자인지 확인 : " + ((ch4>='A' && ch4<='Z')||(ch4>='a' && ch4<='z')));
+        System.out.println("영문자인지 확인 : " + ((ch4>=65 && ch4<=90)||(ch4>=97 && ch4<=122)));
 
     }
 }
