@@ -34,7 +34,9 @@ public class Application3 {
         int result2 = bnum1 + snum1;
         int result3 = snum1 + snum2;
 
-
+        System.out.println(result);
+        System.out.println(result2);
+        System.out.println(result3);
 
 
 

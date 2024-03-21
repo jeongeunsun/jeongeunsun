@@ -20,7 +20,7 @@ public class Application4 {
 
         System.out.println("height : " + height);
         System.out.println("floorHeight : " + floorHeight);
-        
+
 
     }
 }
