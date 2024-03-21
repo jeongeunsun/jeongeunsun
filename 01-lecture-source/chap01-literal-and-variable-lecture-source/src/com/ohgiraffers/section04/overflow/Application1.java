@@ -29,6 +29,24 @@ public class Application1 {
 
         System.out.println("num2 언더플로우 : " + num2);
 
+        int firstNum = 1000000; //100만
+        int secondNum = 7000000; //70만
+
+        int multi = firstNum * secondNum; //7천억이 나와야함
+
+        System.out.println("firstNum * secondNum = " + multi);
+
+        /* 3. 해결방법 */
+        /* 오버플로우를 예측하고 더 큰 자료형으로 결과값을 받아서 처리한다. */
+        long longMulti = firstNum * secondNum;
+
+        System.out.println(("firstNum * secondNum = " + longMulti)); // 안된다 똑같다
+
+        long result =  (long)firstNum * secondNum;
+
+        System.out.println("firstNum * secondNum = " + result);
+        /* 강제 형변환*/
+
 
 
 
