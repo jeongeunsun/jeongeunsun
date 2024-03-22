@@ -37,7 +37,7 @@ public class Application1 {
         System.out.println("num : " + num); //1
 
         /* 주의사항
-        *   산술 복한 대입연산자의 작성 순서에 주의해야한다.
+        *   산술 복합 대입연산자의 작성 순서에 주의해야한다.
         *   */
 
         num =- 5;
