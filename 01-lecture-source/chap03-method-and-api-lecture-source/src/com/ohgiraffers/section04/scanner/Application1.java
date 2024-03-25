@@ -41,11 +41,18 @@ public class Application1 {
         double num = sc.nextDouble();
         System.out.println("입력하신 실수는 " + num + "입니다.");
 
-        /* 2-4. 논리형 값 입력 받기 */
+        /*  2-4. 논리형 값 입력 받기 */
         /* nextBoolean() : 입력받은 값을 boolean으로 변환시켜준다. */
         System.out.print("참과 거짓의 한가지를 true or false로 입력해주세요 : ");
         boolean isTrue = sc.nextBoolean();
         System.out.println("입력하신 논리값은 " + isTrue + "입니다.");
+
+        /*  2-5. 문자형 값 입력 받기 */
+        /* charAt(int index)를 사용한다. */
+        sc.nextLine();
+        System.out.println("아무 문자나 입력해주세요 : ");
+        char ch = sc.nextLine().charAt(0);
+        System.out.println("입력하신 문자는 " + ch + "입니다.");
 
     }
 }
