@@ -20,7 +20,7 @@ public class Moster {
     public void setKinds(String kinds){
         this.kinds = kinds;
     }
-    public  void setHp(int hp){
+    public void setHp(int hp){
         if(hp > 0){
             this.hp = hp;
         }else{
