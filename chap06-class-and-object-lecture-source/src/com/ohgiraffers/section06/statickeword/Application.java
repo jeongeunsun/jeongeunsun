@@ -44,8 +44,5 @@ public class Application {
 
         StaticMethodTest.staticMethod(); //클래스명.메소드명();  권장함
 
-
-
-        
     }
 }
