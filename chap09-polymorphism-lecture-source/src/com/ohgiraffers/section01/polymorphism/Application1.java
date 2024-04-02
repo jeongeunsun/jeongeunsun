@@ -74,5 +74,41 @@ public class Application1 {
 
         //a1.jump();    //에러남
         //a2.bite();    //에러남
+
+        /* 7. 타입형변환 */
+        System.out.println("==========타입 형변환 확인===========");
+        ((Rabbit)a1).jump();
+        ((Tiger)a2).bite();
+
+        //((Tiger)a1).bite();   //토끼는 호랑이가 될 수 없다. 에러남
+
+        /* 8. instanceof 연산자 사용 확인 */
+        System.out.println("=============instanceof=============");
+        System.out.println("a1이 Tiger 타입인지 확인 : " + (a1 instanceof Tiger));     //false
+        System.out.println("a1이 Rabbit 타입인지 확인 : " + (a1 instanceof Rabbit));   //true
+        System.out.println("a1이 Animal 타입인지 확인 : " + (a1 instanceof Animal));   //true
+        System.out.println("a1이 Object 타입인지 확인 : " + (a1 instanceof Object));   //true
+
+        if(a1 instanceof Rabbit){   //a1의 인스턴스타입이 토끼일때 점프를 해라
+            ((Rabbit)a1).jump();    //true라 출력함
+        }
+        if(a1 instanceof Tiger){    //false라 출력 안함
+            ((Tiger)a1).bite();
+        }
+
+        /* 9. 클래스의 업캐스팅 다운캐스팅 */
+        /*
+        * 클래스 형변환은 up-cating과 down-casting으로 구분할 수 있다.
+        * up-casting : 상위 타입으로의 형변환
+        * down-casting : 하위 타입으로의 형변환
+        * 또한 작성 여부따라 명시적과 묵시적 두 가지로 구분한다.
+        * */
+
+        Animal animal1 = new Rabbit();  //up-casting 묵시적 형변환
+        Animal animal2 = (Animal) new Rabbit(); //up-casting 명시적 형변환
+
+        Rabbit rabbit1 = (Rabbit) animal1;  //down-casting 명시적 형변환
+        //Rabbit rabbit2 = animal2;   //down-casting 묵시적 형변환이 안 됨
+
     }
 }
