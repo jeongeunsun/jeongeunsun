@@ -98,7 +98,7 @@ public class Application1 {
 
         /* 9. 클래스의 업캐스팅 다운캐스팅 */
         /*
-        * 클래스 형변환은 up-cating과 down-casting으로 구분할 수 있다.
+        * 클래스 형변환은 up-casting과 down-casting으로 구분할 수 있다.
         * up-casting : 상위 타입으로의 형변환
         * down-casting : 하위 타입으로의 형변환
         * 또한 작성 여부따라 명시적과 묵시적 두 가지로 구분한다.
