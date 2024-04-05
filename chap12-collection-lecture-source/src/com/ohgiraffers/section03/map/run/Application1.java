@@ -1,7 +1,6 @@
 package com.ohgiraffers.section03.map.run;
 
-import java.util.Date;
-import java.util.HashMap;
+import java.util.*;
 
 public class Application1 {
     public static void main(String[] args) {
@@ -43,5 +42,41 @@ public class Application1 {
 
         System.out.println("hMap = " + hMap);
         System.out.println("hMap.size() = " + hMap.size());
+
+        HashMap<String,String> hmap2 = new HashMap<>();
+        hmap2.put("one","java");
+        hmap2.put("two","oracle");
+        hmap2.put("three","jdbc");
+        hmap2.put("four","html");
+        hmap2.put("five","css");
+
+        Iterator<String> keyIter = hmap2.keySet().iterator();
+
+        while (keyIter.hasNext()){
+            String key = (String) keyIter.next();
+            String value = (String) hmap2.get(key);
+            System.out.println(key + " = " + value);
+        }
+        Collection<String> values = hmap2.values();
+        /* 반복자를 이용한 처리 방법 */
+        Iterator<String> valueIter = values.iterator();
+        while(valueIter.hasNext()){
+            System.out.println("valueIter.next() = " + valueIter.next());
+        }
+
+        /* 배열로 만들어서 처리 */
+        Object[] valueArr = values.toArray();
+        for(int i = 0; i < valueArr.length; i++){
+            System.out.println(i + " : valueArr[i] = "+ valueArr[i]);
+        }
+
+        Set<Map.Entry<String,String>> set = hmap2.entrySet();
+
+        /* Entry를 가지고 처리하는 법 : 키와 객체를 쌍으로 묶는 것 */
+        Iterator<Map.Entry<String,String>> entryIter = set.iterator();
+        while (entryIter.hasNext()){
+            Map.Entry<String,String> entry = entryIter.next();
+            System.out.println(entry.getKey() + " : " + entry.getValue());
+        }
     }
 }
