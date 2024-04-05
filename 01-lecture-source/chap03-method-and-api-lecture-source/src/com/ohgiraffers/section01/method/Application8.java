@@ -22,6 +22,7 @@ public class Application8 {
 
     public static int sumTwoNum(int first, int second){
 
+
         return first + second;
 
     }
