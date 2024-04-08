@@ -11,8 +11,6 @@ public class Application2 {
         animals[3] = new Tiger();
         animals[4] = new Rabbit();
 
-
-
         /* Animal 클래스가 가지는 메소드를 오버라이딩한 메소드를 호출시 동적 바인딩을 이용할 수 있다. */
         for(int i = 0; i < animals.length; i++){
             animals[i].cry();

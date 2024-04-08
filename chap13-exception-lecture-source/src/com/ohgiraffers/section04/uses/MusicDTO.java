@@ -2,8 +2,7 @@ package com.ohgiraffers.section04.uses;
 
 public class MusicDTO {
 
-    private static int nextId = 1;
-
+    private static int nextId = 1;  //번호 매기는 변수?
     private int id;
     private String artist;
     private String title;

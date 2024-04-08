@@ -26,6 +26,7 @@ public class Application3 {
     }
 
     public void feed(Animal animal){
+
         animal.eat();
     }
 }

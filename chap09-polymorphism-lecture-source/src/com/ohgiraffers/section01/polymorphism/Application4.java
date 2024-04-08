@@ -13,7 +13,7 @@ public class Application4 {
 
     public Animal getRandomAnimal(){    //사용자 정의 타입
         int random = (int)(Math.random() * 2);
-
+        System.out.println("random = " + random);
         return random == 0? new Rabbit() : new Tiger();
     }
 }
